@@ -1,0 +1,464 @@
+.grey{
+   background-color: rgb(54, 50, 50);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 80px auto;
+    max-width: 800px;
+    box-shadow:0 4px 15px rgb(115, 49, 49) ;
+ border-bottom: 3px solid;
+ padding-bottom: 5px;
+}
+
+nav {
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: 10;
+    width: 100%;
+    border:10px ;
+    padding:5px 0px ;
+    z-index: 1000;
+    background-color: rgba(15, 14, 13, 0.814);
+    box-shadow:0 2px 10px rgba(161, 27, 27, 0.52);
+
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav li{
+    margin: 5px 10px;
+    
+}
+
+nav a{
+    font-family:sans-serif;
+    color: rgb(242, 242, 242) ;
+    font-size: 20px;
+    text-decoration: none;
+    transition:color 0.3s ; border-bottom: 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav a:hover{
+    color: #562222;
+    border-bottom: 2px solid rgb(249, 249, 249);
+}
+
+body{
+    background-color:rgb(87, 79, 79);
+    
+}
+
+h2{
+font-family: "montserrat", sans-serif;
+font-size: 24px;
+margin-bottom:10px ;
+border-bottom:3px solid white ;
+color:rgb(224, 219, 219);
+display: inline-block;
+padding-bottom: 5px;
+}
+
+p{
+line-height: 1.6;
+    font-family: sans-serif;
+font-size: 18px;
+    color: #dcd7d7;
+
+}
+
+#discovery-section{
+background-color: rgb(54, 50, 50);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 80px auto;
+    max-width: 800px;
+    box-shadow:0 4px 15px rgb(115, 49, 49) ;
+ border-bottom: 3px ;
+ padding-bottom: 5px;
+}
+/*this is the header section styles*/
+.container{
+display: flex;
+flex-direction:column ;
+text-align: center;
+padding: 2rem;
+height: 100vh;
+width: 100vw;
+padding-top: 60;
+background-image: url("mountain-view.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+position: relative;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.chapter-headings, .button-container{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2px;
+}
+
+footer{
+    h3{text-align: center;
+    font-size: 20px;
+    color: #f5f5f5;
+    right: 10;
+    width: 100%;
+    border:10px ;
+    padding:5px 0px ;
+    z-index: 1000;
+    background-color: rgba(40, 34, 29, 0.814);
+    box-shadow:0 2px 10px rgba(161, 27, 27, 0.52);}
+}
+
+button{
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+    transform: 0.2s;
+    background-color: 0.2s;
+    outline: none;
+    border-radius:3px ;
+    margin: 0 10px;
+    padding: 23px 33px;
+    border: 3px solid transparent;
+}
+
+button:active{
+    transform:translate(3px);
+}
+
+button::after,
+button::after{
+    border: 5px;
+}
+
+.shrink-border{
+    background-color: transparent;
+    color: rgb(227, 169, 62);
+     border: 3px solid white;
+    box-shadow: none;
+    
+}
+
+.shrink-border:hover{
+    background-color: transparent;
+    color: azure;
+    box-shadow: none;
+
+}
+
+.shrink-border::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.shrink-border:hover::after{
+   opacity: 1;
+   transform: scaleX(1) scaleY(1);
+
+}
+
+h1{
+color: rgb(245, 238, 238);
+font-size: 2.5rem;
+margin-bottom: 3px;
+}
+
+footer{
+background-color:#1b1b20;
+padding:40px 0;
+color: #ebe7e7;
+
+}
+
+.footer-content{
+ text-align: center;  
+max-width: 1200px;
+ margin:0 auto ;
+
+}
+
+
+.footer-links  {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.footer-links a:hover{
+color: #cf6c6c;
+text-decoration: none;
+transform: color 0.3;
+border-bottom: 2px solid rgb(194, 139, 56);
+
+}
+
+.footer-social  {
+    margin-top: 0;
+
+}
+.footer-social a  {
+    color: #ebe7e7;
+    font-size:24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover  {
+    color: #deaa56;
+    
+}
+#main-gallery-container{
+    margin-top: 50px;
+
+}
+#gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+
+}
+
+figure{
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+}
+
+figure img{
+    width: 190px;
+}
+
+#gallery img{
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px white;
+    z-index: -1;
+    border: 5px white;
+}
+
+figcaption{
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+    color: #562222;
+    z-index: 1;
+    padding:9px 0px 11px 0px ;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: absolute;
+    bottom: 6px;
+}
+
+@media screen and (max-width:600px) {
+    figcaption{
+        font-size: 3vw;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        width:90vw;
+    }
+}
+
+.contact{
+    background-color: #373740;
+    padding: 20px;
+    margin: 80px auto;
+    max-width: 800px;
+    margin-bottom: 40vh;
+    box-shadow: 0 4px 26px #562222;
+    border-radius: 8px;
+    
+}
+.contact h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #dcd7d7;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #dcd7d7;
+    line-height: 1.6;
+    margin: 0;
+}
+.contact input{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #282323;
+    line-height: 1.6;
+    margin: 0;
+    
+}
+
+/*custom table styles*/
+.custom-table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+/*can put the same style onto two things whenn you put a coma*/
+.custom-table th,
+.custom-table td{
+    padding: 10px;
+    border: 1px solid whitesmoke;
+}
+
+.light-text{
+    color: #e8e5e5;
+}
+
+.text{
+    color: #6cbbcf;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* about us styles*/
+
+.two-column-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px ;
+    margin-left: 70px;
+    margin-bottom: 15px;
+}
+
+.column img{
+width: 100%;
+height: auto;
+}
+
+.column{
+    flex-basis: 50%;
+}
+
+.about-section{
+    
+    background-color: #585864;
+    margin-left: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    box-shadow: 8px 4px 15px #562222;
+    border-radius: 8px ;
+    border: 2px solid#562222;
+}
+.about-section p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #62d3d4;
+    line-height: 1.6;
+    margin: 2px;
+}
+
+.about-section h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #d68181;
+    border-bottom: 2px solid red;
+}
+
+.call-to-action{
+background-color: #373740;
+text-align: center;
+padding:10px;
+}
+/*tours page styling*/
+
+.plus{
+    background-color: #1b1b20;
+    border: 2px solid red;
+    border-radius: 8px;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: bacckground-color 0.3s;
+    color: #62d3d4;
+    margin-left: 560px;
+   
+}
+
+.plus:hover{
+background-color: #8d3333;
+}
+
+.content-tour{
+    background-color: #1b1b20;
+    border:2px solid #562222;
+   border-radius: 8px;
+   max-width: 800px;
+   padding: 5px;
+    margin: 80px auto;
+}
+
+iframe{
+    color: #c70d0d;
+}
+
+.section-tour-content{
+    background-color: #1b1b20;
+    border-radius: 8px;
+    padding: 20p;
+    box-shadow: 0px 4px 15px red;
+    height: auto;
+    border:1px solid white;
+}
+button{
+    background-color: #c70d0d00;
+    color: #562222;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: inline;
+    box-shadow: 2px 0px 5px blue;
+}
+
+.section-tour-content iframe, h2{
+   margin: 10px;
+}

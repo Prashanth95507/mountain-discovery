@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Montain Discovery's</title>
+<meta charset="UTF-8">
+
+<meta name="description" content="mountain journeys page">
+
+<meta name="keywords" content="mountains, touring, hiking, new heights ">
+
+<meta name="author" content="prashanth saravanan">
+
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="class style.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<script>
+function myfunction(){
+    alert("button clicked!");
+}
+</script>
+
+</head>
+
+<div >
+    <nav>
+        <ul>
+            <li><a href="home-nav.html">home</a></li>
+            <li><a href="tours.html">tours</a></li>
+            <li><a href="about us.html">about</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="contact us.html">contacts</a></li>
+            <li><a href="table.html">table</a></li>
+            <li><a href="map.html">map</a></li>
+            <li><a href="javascript example.html">java</a></li>
+            <li><a href="Canvas.html">canvas</a></li>
+        </ul>
+    </nav>
+<Section class="grey">
+<div>
+    <script>
+        function myfunction(){
+            document.getElementById("test").innerHTML =
+            "This is the changed heading";
+        }
+    </script>
+
+
+
+    <h1 id="test">og heading</h1>
+    
+    <!--the onclick element is used to say the javascript will only be used when clicked-->
+    
+    <button onclick="myfunction()">Click me</button>
+</div>
+
+</Section>
+
+<Section class="chapter-section">
+
+    <h2 id="heading">hello world</h2>
+
+<button onclick="changetag()">changetag</button>
+    
+    <script>
+        function changetag(){
+            // get the existing heading element
+            
+            var heading = document.getElementById("heading");
+
+            // create a new paragraph element
+
+            var newParagraph = document.createElement("p");
+
+            // set the content of the paragraph
+
+            newParagraph.textContent = 
+            "this is the new paragraph created dynamically.";
+
+            // Replace the exxisting heading with the new paragraph
+
+            heading.parentNode.replaceChild(newParagraph,heading);
+        }
+    </script>
+
+
+</Section>
+
+<Section class="grey">
+
+    <img 
+    id="myimage"
+    width="500"
+    src="gallery6 .jpg"
+    alt="og image">
+    
+    <button onclick="changeAttributes()">change</button>
+
+    <script>
+        function changeAttributes(){
+        // get the existing image element
+
+        var image = document.getElementById("myimage");
+
+        // change the src attribute
+
+        image.src = "gallery10.jpg";
+
+        //change the alt attribute
+
+        image.alt = "New Image";
+        }
+    </script>
+</Section>
+
+<Section class="grey">
+
+    <img 
+    id="theimage"
+    width="500"
+    src="gallery6 .jpg"
+    alt="og image">
+    
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function () {
+        var image = document.getElementById("theimage");
+
+        //Change image source on "Enter" key press
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                image.src = "gallery8.jpg";
+            }
+        });
+    });
+    </script>
+</Section>
+
+
+
+
+<footer>
+    <div class="footer-content">
+    <p>© 2026 mountain journeys. All rights reserved </p>
+   
+    <ul class="footer-links">
+        <li><a href="home-nav.html">home</a></li>
+        <li><a href="tours.html">tours</a></li>
+        <li><a href="about us.html">about</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="contact us.html">contacts</a></li>
+    </ul>
+
+    <p class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </p>
+    </div>
+   </footer>

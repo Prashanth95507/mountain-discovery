@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Montain Discovery's</title>
+<meta charset="UTF-8">
+
+<meta name="description" content="mountain journeys page">
+
+<meta name="keywords" content="mountains, touring, hiking, new heights ">
+
+<meta name="author" content="prashanth saravanan">
+
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="class style.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<div >
+    <nav>
+        <ul>
+            <li><a href="home-nav.html">home</a></li>
+            <li><a href="tours.html">tours</a></li>
+            <li><a href="about us.html">about</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="contact us.html">contacts</a></li>
+            <li><a href="table.html">table</a></li>
+            <li><a href="map.html">map</a></li>
+            <li><a href="javascript example.html">java</a></li>
+            <li><a href="Canvas.html">canvas</a></li>
+        </ul>
+    </nav>
+
+<!--This is the media section-->
+<br><div class="row push-down">
+    <section class="section-tour-content" style="margin-bottom: 20px;">
+    <h2>song</h2>
+    <p>artist name</p>
+    
+    <!--the audio element allows for sound files to be played-->
+    <!--when control is added it creates a mini bar to forward or rewind the video-->
+    <audio controls>
+        <source src="guitar-loop.mp3" type="audio/mp3">
+    </audio>
+    </section>
+
+    
+    
+    
+    <section class="section-tour-content" style="margin-bottom: 20px;">
+    <h2>song name</h2>
+    <p>artist name</p>
+        <audio id="player" src="guitar-loop.mp3"></audio>
+        <div >
+            <button class="audio-button" onclick="document.getElementById('player').play()">Play</button>
+            <button class="audio-button" onclick="document.getElementById('player').pause()">Pause</button>
+            <button class="audio-button" onclick="document.getElementById('player').muted=!document.getElementById('player').muted">Mute/Unmute</button>
+        </div>
+    </section>
+</div>
+
+<div >
+    <section class="section-tour-content">
+        <h2>video</h2>
+        <br><iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/CNpLaGCXFu0?si=4PBbwkd0Sj3joBp2" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <section class="section-tour-content">
+        <h2>video</h2>
+        <video width="560" height="240" controls>
+            <source src=""/> <!--same as the audio file put the link from the folder for a video-->
+        </video>
+    </section>
+
+</div>
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-content">
+    <p>© 2026 mountain journeys. All rights reserved </p>
+   
+    <ul class="footer-links">
+        <li><a href="home-nav.html">home</a></li>
+        <li><a href="tours.html">tours</a></li>
+        <li><a href="about us.html">about</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="contact us.html">contacts</a></li>
+    </ul>
+
+    <p class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </p>
+    </div>
+   </footer>
